@@ -1,0 +1,148 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+  }
+body {
+    
+    padding-top: 56px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255); /* Adjust according to your fixed navbar height */
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(190, 172, 255); /* Dark color for the navbar */
+   border:black;
+   font-size: larger;
+}
+.navbar-brand {
+    color: rgb(255, 255, 255) !important; /* White text for navbar items */
+    font-family: fantasy;
+    font-size: larger;
+}
+.nav-link {
+    color: rgb(255, 255, 255) !important; /* White text for navbar items */  
+}
+.navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.795) !important; /* Highlight color on hover */
+}
+/* Jumbotron */
+.jumbtron {
+    font-family: monospace;
+    background: url('coding.jpg');
+    background-color: darkslategray;
+    background-size: cover;
+    background-attachment:scroll;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    width:100%;
+    height: 85vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 50%;
+    position: -ms-page;   
+}
+.jumbotron h1 {
+    font-size: 3rem;
+    font-family: monospace;
+}
+.jumbotron p {
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+/* Cards */
+.left{
+    /* float:left; */
+    display: flex;
+    flex-direction:left;
+    /* margin-left:300px; */
+}
+.right{
+    /* float: right; */
+    width:400px;
+    display: flex;
+    flex-direction:right;
+    margin:130px 0px 0px 150px;
+    font-size: larger;
+}
+/* Skills Section */
+#advantages .list-group-item {  
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding-left: 5;
+}
+#advantages .list-group-item::before {
+    content: "✔";
+    color: #bea6ff;
+    margin-right: 10px;
+    
+}
+#advantages, #registration {
+    margin: 20px 0;
+    animation: fadeIn 1s;
+}
+#registration form {
+    display: flex;
+    flex-direction: column;
+}
+/* Register Section */
+#register {
+    padding: 5rem 0;
+  }
+/* Footer */
+footer {
+    background-color: rgb(201, 160, 255); /* Bright footer color */
+    color: rgb(255, 255, 255);
+}
+
+footer p {
+    margin: 0;
+    
+}
+#contact {
+    padding-bottom: 20px; /* Adjust this value as needed */
+}
+#row{
+    background-color:rgb(255, 255, 255) ;
+}
+nav{
+    margin-top:-65px;
+}
+@media screen and (max-width: 425px) {
+    .img{
+        margin:10px 0px 0px -120px;
+    }
+    .des{
+        margin-left:10px;
+    }
+    .right{
+        margin:0px;
+        padding:0px 20px;
+    }
+    .box{
+        padding:0px 5px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .img{
+        margin:10px 0px 0px -120px;
+    }
+    .des{
+        margin-left:10px;
+    }
+    .right{
+        margin:90px 0px 0px 0px;
+        padding:0px 20px;
+    }
+    .box{
+        padding:0px 5px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .right{
+        margin:90px 0px 0px 50px;
+    }
+  }
